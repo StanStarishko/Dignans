@@ -1,149 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Security Headers -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta name="robots" content="index, follow">
-    
-    <!-- SEO Meta Tags specifically for home page -->
-    <meta name="description" content="Welcome to Dignans - Edinburgh's premier outdoor catering service. Specialising in corporate events, office lunches, and celebration buffets with exceptional quality and service.">
-    <meta name="keywords" content="Dignans Edinburgh, quality catering, corporate catering, office lunch, BBQ catering, outdoor catering Edinburgh, event catering">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Dignans - High-quality outdoor catering company in Edinburgh.">
+    <meta name="keywords" content="Edinburgh catering, corporate catering, office lunch delivery, BBQ catering">
     <meta name="author" content="Dignans">
-    
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Dignans - Premier Catering Services in Edinburgh">
-    <meta property="og:description" content="Exceptional catering services for corporate events, celebrations, and office lunches in Edinburgh">
-    <meta property="og:image" content="/frontend/img/logos/large-logo.png">
+    <meta property="og:title" content="Dignans Catering - Edinburgh's Premier Outdoor Catering Service">
+    <meta property="og:description" content="High-quality catering services in Edinburgh.">
+    <meta property="og:image" content="/frontend/img/logos/logo.png">
     <meta property="og:url" content="https://dignans.com">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/frontend/img/logos/favicon_01.png">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="/frontend/css/main.css">
-    
-    <title>Dignans - Premier Catering Services in Edinburgh</title>
+    <link rel="stylesheet" href="/frontend/css/components.css">
+    <link rel="stylesheet" href="/frontend/css/layout.css">
+    <link rel="stylesheet" href="/frontend/css/menu.css">
+
+    <title>Dignans Catering - Edinburgh</title>
 </head>
+
 <body>
-    <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="/index.html">
-                    <img src="/frontend/img/logos/logo.png" alt="Dignans Catering Logo">
-                </a>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="navbar">
+                    <a href="/index.html" class="navbar-brand">
+                        <img src="/frontend/img/logos/favicon_03.png" alt="Dignans Catering Logo" class="menu-item-img">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li><a href="/index.html" class="nav-link active">Home</a></li>
+                        <li><a href="/frontend/html/menu-page.html" class="nav-link">Menu</a></li>
+                        <li><a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a></li>
+                        <li><a href="/frontend/html/contact.html" class="nav-link">Contact Us</a></li>
+                        <li><a href="/frontend/html/order.html" class="nav-link">Order Form</a></li>
+                        <li><a href="/frontend/html/about.html" class="nav-link">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="nav-links">
-                <li><a href="/index.html" class="active">Home</a></li>
-                <li><a href="/frontend/html/menu.html">Menu</a></li>
-                <li><a href="/frontend/html/special-offers.html">Special Offers</a></li>
-                <li><a href="/frontend/html/contact.html">Contact Us</a></li>
-                <li><a href="/frontend/html/order.html">Order Form</a></li>
-                <li><a href="/frontend/html/about.html">About Us</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
+    <!-- Main Content Area -->
+    <main class="main">
+        <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Dignans</h1>
-                <p>Edinburgh's Premier Outdoor Catering Service</p>
-                <div class="hero-buttons">
-                    <a href="/frontend/html/menu.html" class="btn primary">View Our Menus</a>
-                    <a href="/frontend/html/order.html" class="btn secondary">Place an Order</a>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="h1 mb-3">Welcome to Dignans Catering</h1>
+                    <p class="mb-4">Edinburgh's premier outdoor catering service, bringing exceptional food to your
+                        events.</p>
+                    <a href="/frontend/html/contact.html" class="btn btn-primary">Get in Touch</a>
                 </div>
             </div>
         </section>
 
-        <section class="services">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Corporate Catering</h3>
-                    <p>Bespoke catering solutions for business meetings, conferences, and corporate events.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Office Lunches</h3>
-                    <p>Fresh, delicious lunches delivered daily to your office.</p>
-                </div>
-                <div class="service-card">
-                    <h3>BBQ Events</h3>
-                    <p>Professional BBQ catering for outdoor events and celebrations.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Celebration Buffets</h3>
-                    <p>Perfect for parties, celebrations, and special occasions.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="special-offers-preview">
-            <h2>Special Offers</h2>
-            <div class="offers-banner">
-                <h3>Monthly Promotions</h3>
-                <p>Check out our latest special offers and discounts.</p>
-                <a href="/frontend/html/special-offers.html" class="btn primary">View Offers</a>
-            </div>
-        </section>
-
-        <section class="why-choose-us">
-            <h2>Why Choose Dignans?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>Quality</h3>
-                    <p>High-quality ingredients and exceptional preparation.</p>
-                </div>
-                <div class="feature">
-                    <h3>Experience</h3>
-                    <p>Over 5 years of catering excellence in Edinburgh.</p>
-                </div>
-                <div class="feature">
-                    <h3>Reliability</h3>
-                    <p>Punctual delivery and professional service.</p>
-                </div>
-                <div class="feature">
-                    <h3>Customisation</h3>
-                    <p>Flexible menu options to suit your needs.</p>
+        <!-- Content Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row gap-4">
+                    <!-- Featured Services -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Corporate Events</h3>
+                                <p class="card-text">Professional catering solutions for your business meetings and
+                                    corporate events.</p>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Private Parties</h3>
+                                <p class="card-text">Make your special occasions memorable with our bespoke catering
+                                    services.</p>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Outdoor Events</h3>
+                                <p class="card-text">Specialized in BBQ and outdoor catering for festivals and large
+                                    gatherings.</p>
+                                <a href="#" class="btn btn-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p>
-                    <img src="/frontend/img/icons/telephone-call_9194924.png" alt="Phone">
-                    <a href="tel:+441234567890">+44 123 456 7890</a>
-                </p>
-                <p>
-                    <img src="/frontend/img/icons/mail_1324120.png" alt="Email">
-                    <a href="mailto:info@dignans.com">info@dignans.com</a>
-                </p>
-                <p>
-                    <img src="/frontend/img/icons/address_3447502.png" alt="Address">
-                    Edinburgh, Scotland
-                </p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Navigation Links -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="/index.html" class="nav-link active">Home</a>
+                <a href="/frontend/html/menu-page.html" class="nav-link">Menu</a>
+                <a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a>
+                <a href="/frontend/html/contact.html" class="nav-link">Contact Us</a>
+                <a href="/frontend/html/order.html" class="nav-link">Order Form</a>
+                <a href="/frontend/html/about.html" class="nav-link">About Us</a>
             </div>
-            <div class="footer-social">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><img src="/frontend/img/icons/facebook_5968764.png" alt="Facebook"></a>
-                    <a href="#"><img src="/frontend/img/icons/instagram_4138124.png" alt="Instagram"></a>
-                    <a href="#"><img src="/frontend/img/icons/X-media.jpg" alt="X (Twitter)"></a>
+
+            <!-- Contact Information and Social Media -->
+            <div class="d-flex justify-content-center gap-5 align-items-center mb-4">
+                <!-- Social Media -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/facebook_5968764.png" alt="Facebook" class="menu-item-img">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/instagram_4138124.png" alt="Instagram" class="menu-item-img">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/X-media.jpg" alt="X (Twitter)" class="menu-item-img">
+                    </a>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="d-flex gap-5">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/telephone-call_9194924.png" alt="Phone" class="menu-item-img">
+                        <a href="tel:+441234567890">+44 123 456 7890</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/mail_1324120.png" alt="Email" class="menu-item-img">
+                        <a href="mailto:info@dignans.com">info@dignans.com</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/address_3447502.png" alt="Address" class="menu-item-img">
+                        <span>Edinburgh, Scotland</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Dignans Catering. All rights reserved.</p>
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p>&copy; 2025 Dignans Catering. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
 </body>
+
 </html>
