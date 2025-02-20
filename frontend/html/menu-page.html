@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Security Headers -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO Meta Tags specifically for menu page -->
+    <meta name="description" content="Explore Dignans' diverse catering menus - From party menus and office lunches to executive dining and BBQs. Quality catering services in Edinburgh.">
+    <meta name="keywords" content="catering menu Edinburgh, party catering, office lunch menu, BBQ catering menu, executive catering, breakfast catering Edinburgh">
+    <meta name="author" content="Dignans">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Dignans Catering - Our Menus">
+    <meta property="og:description" content="Discover our wide range of catering menus for all occasions - corporate events, parties, BBQs and more">
+    <meta property="og:image" content="/frontend/img/logos/menu-logo-01.webp">
+    <meta property="og:url" content="https://dignans.com/menu">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/frontend/img/logos/favicon_01.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/frontend/css/main.css">
+    
+    <title>Our Menus - Dignans Catering Edinburgh</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/frontend/img/logos/logo.png" alt="Dignans Catering Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/frontend/html/menu.html" class="active">Menu</a></li>
+                <li><a href="/frontend/html/special-offers.html">Special Offers</a></li>
+                <li><a href="/frontend/html/contact.html">Contact Us</a></li>
+                <li><a href="/frontend/html/order.html">Order Form</a></li>
+                <li><a href="/frontend/html/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-header">
+            <h1>Our Menus</h1>
+            <p>Explore our diverse range of catering options</p>
+        </section>
+
+        <section class="menu-tabs">
+            <div class="tab-container">
+                <button class="tab-button active" data-tab="party">Party Menus</button>
+                <button class="tab-button" data-tab="lunch">Lunch Menus</button>
+                <button class="tab-button" data-tab="office">Office Catering</button>
+                <button class="tab-button" data-tab="executive">Executive Menus</button>
+                <button class="tab-button" data-tab="breakfast">Breakfast</button>
+                <button class="tab-button" data-tab="bbq">Office BBQs</button>
+            </div>
+
+            <!-- Party Menus Tab -->
+            <div class="tab-content active" id="party">
+                <h2>Party Menus</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h3>Menu A - £3.00 per person</h3>
+                        <ul>
+                            <li>Cocktail sandwiches</li>
+                            <li>Chicken satay sticks</li>
+                            <li>Indian selection</li>
+                            <li>Vol-au-vents</li>
+                            <li>Flavoured sausages on sticks</li>
+                        </ul>
+                        <p class="menu-note">All disposables supplied free of charge</p>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Menu B - £4.00 per person</h3>
+                        <ul>
+                            <li>Cocktail sandwiches</li>
+                            <li>Mini rolls</li>
+                            <li>Chicken satay sticks</li>
+                            <li>Savoury eggs</li>
+                            <li>Mini quiche</li>
+                            <li>Flavoured sausages on sticks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunch Menus Tab -->
+            <div class="tab-content" id="lunch">
+                <h2>Lunch Menus</h2>
+                <p class="menu-description">Freshly prepared rolls, baguettes, sandwiches, ciabattas, salad, and fruit boxes</p>
+                
+                <div class="menu-special">
+                    <h3>'Mix and munch' deal</h3>
+                    <p>Pick two or more items from any section and get 10% discount</p>
+                </div>
+
+                <div class="menu-section">
+                    <h3>Hot Fayre</h3>
+                    <ul>
+                        <li>Fresh homemade soup - £0.90</li>
+                        <li>Homemade corned beef stovies - £1.30</li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3>Sandwiches, Rolls & Baguettes (£1.10-£1.70)</h3>
+                    <ul class="menu-columns">
+                        <li>Chicken caesar</li>
+                        <li>Ham and port salut</li>
+                        <li>Chicken and sweetcorn</li>
+                        <li>Brie and cranberry</li>
+                        <li>Egg and cress</li>
+                        <li>Tuna and sweetcorn</li>
+                        <li>Greek salad</li>
+                        <li>BLT</li>
+                        <li>Roast beef with horseradish</li>
+                        <li>Turkey and coleslaw</li>
+                        <li>Cheese savoury Club sandwich</li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3>Salad Boxes (£2.50-£3.50)</h3>
+                    <ul>
+                        <li>Chargrilled chicken, greenleaf and red onion salad, spicey coleslaw, cherry tomatoes with pesto drizzle</li>
+                        <li>Ploughmans lunch with honey ham, chunks of mature cheddar, pickle, crisp celery, and cherry tomatoes</li>
+                

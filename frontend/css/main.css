@@ -1,0 +1,132 @@
+/* main.css - Core styles and variables */
+
+/* Font imports */
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/trajan/TrajanPro-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/trajan/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* Root Variables - Bootstrap compatible naming */
+:root {
+    /* Theme colors */
+    --primary: #4CAF50;
+    --secondary: #FFF8E0;
+    --light: #FFFFFF;
+    --dark: #000000;
+    --info: #96B7F3;
+    
+    /* Specific theme colors */
+    --primary-hover: #45A049;
+    --secondary-hover: #E8D9B0;
+    --link-default: #1E88E5;
+    --link-hover: #1565C0;
+    --link-visited: #4A148C;
+    --nav-text: #00008B;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'TrajanPro', system-ui, -apple-system, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+/* Typography */
+h1, .h1 { font-size: 2.5rem; }
+h2, .h2 { font-size: 2rem; }
+h3, .h3 { font-size: 1.75rem; }
+h4, .h4 { font-size: 1.5rem; }
+h5, .h5 { font-size: 1.25rem; }
+h6, .h6 { font-size: 1rem; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'TrajanPro', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--nav-text);
+    margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+    color: var(--link-default);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+/* Container - Bootstrap compatible */
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+    .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+    .container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+    .container { max-width: 1140px; }
+}
+@media (min-width: 1400px) {
+    .container { max-width: 1320px; }
+}
+
+/* Display utilities */
+.d-none { display: none !important; }
+.d-inline { display: inline !important; }
+.d-inline-block { display: inline-block !important; }
+.d-block { display: block !important; }
+.d-flex { display: flex !important; }
+.d-grid { display: grid !important; }
+
+/* Flex utilities */
+.flex-row { flex-direction: row !important; }
+.flex-column { flex-direction: column !important; }
+.justify-content-start { justify-content: flex-start !important; }
+.justify-content-end { justify-content: flex-end !important; }
+.justify-content-center { justify-content: center !important; }
+.justify-content-between { justify-content: space-between !important; }
+.align-items-start { align-items: flex-start !important; }
+.align-items-end { align-items: flex-end !important; }
+.align-items-center { align-items: center !important; }
+
+/* Text utilities */
+.text-start { text-align: left !important; }
+.text-end { text-align: right !important; }
+.text-center { text-align: center !important; }
