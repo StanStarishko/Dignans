@@ -1,6 +1,6 @@
 /* main.css - Core styles and variables */
 
-/* Font imports */
+/* Import custom fonts */
 @font-face {
     font-family: 'TrajanPro';
     src: url('../fonts/trajan/TrajanPro-Bold.otf') format('opentype');
@@ -13,16 +13,13 @@
     font-weight: normal;
 }
 
-/* Root Variables - Bootstrap compatible naming */
+/* Define root variables for theme colors and other reusable values */
 :root {
-    /* Theme colors */
     --primary: #4CAF50;
     --secondary: #FFF8E0;
     --light: #FFFFFF;
     --dark: #000000;
-    --info: #ECE7F8/*#96B7F3*/;
-    
-    /* Specific theme colors */
+    --info: #ECE7F8;
     --primary-hover: #45A049;
     --secondary-hover: #E8D9B0;
     --link-default: #1E88E5;
@@ -31,7 +28,7 @@
     --nav-text: #00008B;
 }
 
-/* Reset */
+/* Reset default styles for all elements */
 *,
 *::before,
 *::after {
@@ -40,7 +37,7 @@
     box-sizing: border-box;
 }
 
-/* Base styles */
+/* Base styles for the body */
 body {
     font-family: 'TrajanPro', system-ui, -apple-system, sans-serif;
     font-size: 1rem;
@@ -49,7 +46,7 @@ body {
     background-color: var(--light);
 }
 
-/* Typography */
+/* Typography styles for headings */
 h1, .h1 { font-size: 2.5rem; }
 h2, .h2 { font-size: 2rem; }
 h3, .h3 { font-size: 1.75rem; }
@@ -66,7 +63,7 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 0.5rem;
 }
 
-/* Links */
+/* Link styles */
 a {
     color: var(--link-default);
     text-decoration: none;
@@ -82,7 +79,7 @@ a:visited {
     color: var(--link-visited);
 }
 
-/* Container - Bootstrap compatible */
+/* Container for centering content with responsive widths */
 .container {
     width: 100%;
     padding-right: var(--bs-gutter-x, 0.75rem);
@@ -107,7 +104,7 @@ a:visited {
     .container { max-width: 1320px; }
 }
 
-/* Display utilities */
+/* Utility classes for display properties */
 .d-none { display: none !important; }
 .d-inline { display: inline !important; }
 .d-inline-block { display: inline-block !important; }
@@ -115,7 +112,7 @@ a:visited {
 .d-flex { display: flex !important; }
 .d-grid { display: grid !important; }
 
-/* Flex utilities */
+/* Flex utility classes */
 .flex-row { flex-direction: row !important; }
 .flex-column { flex-direction: column !important; }
 .justify-content-start { justify-content: flex-start !important; }
@@ -126,11 +123,11 @@ a:visited {
 .align-items-end { align-items: flex-end !important; }
 .align-items-center { align-items: center !important; }
 
-/* Text utilities */
+/* Text alignment utilities */
 .text-start { text-align: left !important; }
 .text-end { text-align: right !important; }
 .text-center { text-align: center !important; }
 
-/* Text sizes*/
+/* Text size utilities */
 .text-small { font-size: small !important; }
 .text-medium { font-size: medium !important; }

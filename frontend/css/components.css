@@ -1,6 +1,6 @@
 /* components.css - UI Components */
 
-/* Buttons */
+/* Button styles */
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -44,7 +44,7 @@ a.btn-primary:hover {
     border-color: var(--secondary-hover);
 }
 
-/* Cards */
+/* Card styles */
 .card {
     position: relative;
     display: flex;
@@ -77,7 +77,7 @@ a.btn-primary:hover {
     margin-bottom: 1rem;
 }
 
-/* Navigation */
+/* Navigation bar styles */
 .navbar {
     position: relative;
     display: flex;
@@ -107,6 +107,18 @@ a.btn-primary:hover {
     gap: 1rem;
 }
 
+/* Responsive navigation for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
 .nav-link {
     color: var(--nav-text);
     padding: 0.5rem 1rem;
@@ -120,7 +132,7 @@ a.btn-primary:hover {
     text-decoration: none;
 }
 
-/* Menu specific components */
+/* Menu item styles */
 .menu-item {
     display: flex;
     align-items: center;
@@ -150,14 +162,12 @@ a.btn-primary:hover {
     color: var(--primary);
 }
 
-/* components.css - Add these styles if not already present */
-
-/* Form Group */
+/* Form group styles */
 .form-group {
     margin-bottom: 1rem;
 }
 
-/* Form Label */
+/* Form label styles */
 .form-label {
     display: block;
     margin-bottom: 0.5rem;
@@ -165,7 +175,7 @@ a.btn-primary:hover {
     color: var(--nav-text);
 }
 
-/* Form Control */
+/* Form control styles */
 .form-control {
     width: 100%;
     padding: 0.5rem;
@@ -180,7 +190,7 @@ a.btn-primary:hover {
     outline: none;
 }
 
-/* Textarea */
+/* Textarea styles */
 textarea.form-control {
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical;
 }
