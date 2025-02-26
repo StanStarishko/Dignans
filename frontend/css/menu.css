@@ -14,7 +14,6 @@
 }
 
 .menu-tabs .nav-link {
-    color: var(--nav-text);
     background-color: transparent;
     border: 1px solid var(--primary);
     padding: 0.5rem 1rem;
@@ -53,9 +52,9 @@
 }
 
 .menu-item-img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
     object-fit: cover;
 }
 
@@ -103,6 +102,22 @@
 
 .menu-card:hover {
     transform: translateY(-0.25rem);
+}
+
+.menu-card-body {
+    padding: 1rem;
+    flex: 1;
+}
+
+.menu-card-body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-card-body ul li {
+    margin-bottom: 0.5rem;
+    color: var(--dark);
 }
 
 /* Animations */

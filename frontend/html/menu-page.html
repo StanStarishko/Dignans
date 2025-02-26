@@ -1,137 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Security Headers -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; script-src 'self'">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta name="robots" content="index, follow">
-    
-    <!-- SEO Meta Tags specifically for menu page -->
-    <meta name="description" content="Explore Dignans' diverse catering menus - From party menus and office lunches to executive dining and BBQs. Quality catering services in Edinburgh.">
-    <meta name="keywords" content="catering menu Edinburgh, party catering, office lunch menu, BBQ catering menu, executive catering, breakfast catering Edinburgh">
-    <meta name="author" content="Dignans">
-    
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Dignans Catering - Explore our delicious menus for parties, lunches, and office catering.">
+    <meta name="keywords" content="Dignans Catering, party menus, lunch menus, office catering, Edinburgh catering">
+    <meta name="author" content="Dignans Catering">
+
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Dignans Catering - Our Menus">
-    <meta property="og:description" content="Discover our wide range of catering menus for all occasions - corporate events, parties, BBQs and more">
-    <meta property="og:image" content="/frontend/img/logos/menu-logo-01.webp">
+    <meta property="og:title" content="Dignans Catering - Explore Our Menus">
+    <meta property="og:description" content="Discover our wide range of catering menus for any occasion.">
+    <meta property="og:image" content="/frontend/img/logos/logo.png">
     <meta property="og:url" content="https://dignans.com/menu">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/frontend/img/logos/favicon_01.png">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="/frontend/css/main.css">
-    
-    <title>Our Menus - Dignans Catering Edinburgh</title>
+    <link rel="stylesheet" href="/frontend/css/components.css">
+    <link rel="stylesheet" href="/frontend/css/layout.css">
+    <link rel="stylesheet" href="/frontend/css/menu.css">
+
+    <title>Dignans Catering - Menu</title>
 </head>
+
 <body>
-    <header>
-        <nav class="main-nav">
-            <div class="logo">
-                <a href="/index.html">
-                    <img src="/frontend/img/logos/logo.png" alt="Dignans Catering Logo">
-                </a>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="navbar">
+                    <a href="/index.html" class="navbar-brand">
+                        <img src="/frontend/img/logos/favicon_03.png" alt="Dignans Catering Logo" class="menu-item-img">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/html/menu-page.html" class="nav-link active">Menu</a></li>
+                        <li><a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a></li>
+                        <li><a href="/frontend/html/contact.html" class="nav-link">Contact Us</a></li>
+                        <li><a href="/frontend/html/order.html" class="nav-link">Order Form</a></li>
+                        <li><a href="/frontend/html/about.html" class="nav-link">About Us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="nav-links">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/frontend/html/menu.html" class="active">Menu</a></li>
-                <li><a href="/frontend/html/special-offers.html">Special Offers</a></li>
-                <li><a href="/frontend/html/contact.html">Contact Us</a></li>
-                <li><a href="/frontend/html/order.html">Order Form</a></li>
-                <li><a href="/frontend/html/about.html">About Us</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="menu-header">
-            <h1>Our Menus</h1>
-            <p>Explore our diverse range of catering options</p>
+    <!-- Main Content Area -->
+    <main class="main">
+        <!-- Menu Tabs -->
+        <section class="section">
+            <div class="container">
+                <div class="menu-tabs">
+                    <button class="nav-link active" data-tab="party">Party Menus</button>
+                    <button class="nav-link" data-tab="lunch">Lunch Menus</button>
+                    <button class="nav-link" data-tab="office">Office Catering</button>
+                </div>
+
+                <!-- Party Menus -->
+                <div id="party" class="menu-content active">
+                    <h2>Party Menus</h2>
+                    <div class="menu-grid">
+                        <!-- Menu A -->
+                        <div class="menu-card">
+                            <img src="/frontend/img/logos/menu-logo-01.webp" alt="Menu A" class="menu-item-img">
+                            <div class="menu-card-body">
+                                <h3>Menu A - £3.00 per person</h3>
+                                <ul>
+                                    <li>Cocktail sandwiches</li>
+                                    <li>Chicken satay sticks</li>
+                                    <li>Indian selection</li>
+                                    <li>Vol-au-vents</li>
+                                    <li>Flavoured sausages on sticks</li>
+                                </ul>
+                                <p>All disposables supplied free of charge.</p>
+                                <!-- Print Button -->
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary" onclick="">Print</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu B -->
+                        <div class="menu-card">
+                            <img src="/frontend/img/logos/menu-logo-02.webp" alt="Menu B" class="menu-item-img">
+                            <div class="menu-card-body">
+                                <h3>Menu B - £4.00 per person</h3>
+                                <ul>
+                                    <li>Cocktail sandwiches</li>
+                                    <li>Mini rolls</li>
+                                    <li>Chicken satay sticks</li>
+                                    <li>Savoury eggs</li>
+                                    <li>Mini quiche</li>
+                                    <li>Flavoured sausages on sticks</li>
+                                </ul>
+                                <!-- Print Button -->
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary" onclick="">Print</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch Menus -->
+                <div id="lunch" class="menu-content">
+                    <h2>Lunch Menus</h2>
+                    <div class="menu-grid">
+                        <!-- Sandwiches and Rolls -->
+                        <div class="menu-card">
+                            <img src="/frontend/img/meals/Sandwiches.jpg" alt="Sandwiches and Rolls" class="menu-item-img">
+                            <div class="menu-card-body">
+                                <h3>Freshly Prepared Rolls, Baguettes, and Sandwiches</h3>
+                                <h4>Prices from £1.10–£1.70</h4>
+                                <ul>
+                                    <li>Chicken Caesar</li>
+                                    <li>Ham and Port Salut</li>
+                                    <li>Chicken and Sweetcorn</li>
+                                    <li>Brie and Cranberry</li>
+                                    <li>Egg and Cress</li>
+                                    <li>Tuna and Sweetcorn</li>
+                                    <li>Greek Salad</li>
+                                    <li>BLT</li>
+                                    <li>Roast Beef with Horseradish</li>
+                                    <li>Turkey and Coleslaw</li>
+                                    <li>Cheese Savoury Club Sandwich</li>
+                                </ul>
+                                <!-- Print Button -->
+                                <div class="text-center">
+                                    <button class="btn btn-primary" onclick="">Print</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Salad Boxes -->
+                        <div class="menu-card">
+                            <img src="/frontend/img/meals/Salad.jpg" alt="Salad Boxes" class="menu-item-img">
+                            <div class="menu-card-body">
+                                <h3>Salad Boxes</h3>
+                                <h4>From £2.50–£3.50 depending on fillings.</h4>
+                                <ul>
+                                    <li>Chargrilled Chicken, Greenleaf, and Red Onion Salad</li>
+                                    <li>Ploughman's Lunch with Honey Ham</li>
+                                    <li>King Prawn and Avocado Salad</li>
+                                    <li>Traditional Greek Salad</li>
+                                    <li>Baby Beetroot, Buffalo Mozzarella, and Mint Yoghurt Dressing</li>
+                                </ul>
+                                <!-- Print Button -->
+                                <div class="text-center">
+                                    <button class="btn btn-primary" onclick="">Print</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Office Catering -->
+                <div id="office" class="menu-content">
+                    <h2>Office Catering</h2>
+                    <div class="menu-grid">
+                        <!-- Everyday Buffet -->
+                        <div class="menu-card">
+                            <img src="/frontend/img/meals/Everyday.jpg" alt="Everyday Buffet" class="menu-item-img">
+                            <div class="menu-card-body">
+                                <h3>The Everyday Buffet</h3>
+                                <ul>
+                                    <li>Mixed Mini Submarine Rolls Platter - £1.00 pp</li>
+                                    <li>Mini Filled Croissants Platter - £1.00 pp</li>
+                                    <li>Filled Wraps Platter - £1.50 pp</li>
+                                    <li>Mini Bagels Platter - £1.50 pp</li>
+                                    <li>Mixed Sandwiches Platter - £1.50 pp</li>
+                                    <li>Fruit Platter for Six - £8.00</li>
+                                </ul>
+                                <!-- Print Button -->
+                                <div class="text-center">
+                                    <button class="btn btn-primary" onclick="">Print</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Executive Menus -->
+                        <div class="menu-card">
+                            <img src="/frontend/img/meals/Executive.jpg" alt="Executive Menus" class="menu-item-img">
+                            <div class="menu-card-body">
+                                <h3>Executive Menus</h3>
+                                <ul>
+                                    <li>Menu A - £7.50 pp</li>
+                                    <li>Menu B - £9.00 pp</li>
+                                    <li>Menu C - £10.50 pp</li>
+                                </ul>
+                                <!-- Print Button -->
+                                <div class="text-center">
+                                    <button class="btn btn-primary" onclick="">Print</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
 
-        <section class="menu-tabs">
-            <div class="tab-container">
-                <button class="tab-button active" data-tab="party">Party Menus</button>
-                <button class="tab-button" data-tab="lunch">Lunch Menus</button>
-                <button class="tab-button" data-tab="office">Office Catering</button>
-                <button class="tab-button" data-tab="executive">Executive Menus</button>
-                <button class="tab-button" data-tab="breakfast">Breakfast</button>
-                <button class="tab-button" data-tab="bbq">Office BBQs</button>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Navigation Links -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/frontend/html/menu-page.html" class="nav-link active">Menu</a>
+                <a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a>
+                <a href="/frontend/html/contact.html" class="nav-link">Contact Us</a>
+                <a href="/frontend/html/order.html" class="nav-link">Order Form</a>
+                <a href="/frontend/html/about.html" class="nav-link">About Us</a>
             </div>
 
-            <!-- Party Menus Tab -->
-            <div class="tab-content active" id="party">
-                <h2>Party Menus</h2>
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <h3>Menu A - £3.00 per person</h3>
-                        <ul>
-                            <li>Cocktail sandwiches</li>
-                            <li>Chicken satay sticks</li>
-                            <li>Indian selection</li>
-                            <li>Vol-au-vents</li>
-                            <li>Flavoured sausages on sticks</li>
-                        </ul>
-                        <p class="menu-note">All disposables supplied free of charge</p>
+            <!-- Contact Information and Social Media -->
+            <div class="d-flex justify-content-center gap-5 align-items-center mb-4">
+                <!-- Social Media -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/facebook_5968764.png" alt="Facebook" class="footer-img">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/instagram_4138124.png" alt="Instagram" class="footer-img">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/X-media.jpg" alt="X (Twitter)" class="footer-img">
+                    </a>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="d-flex gap-5">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/telephone-call_9194924.png" alt="Phone" class="footer-img">
+                        <span>+44 123 456 7890</span>
                     </div>
-                    <div class="menu-item">
-                        <h3>Menu B - £4.00 per person</h3>
-                        <ul>
-                            <li>Cocktail sandwiches</li>
-                            <li>Mini rolls</li>
-                            <li>Chicken satay sticks</li>
-                            <li>Savoury eggs</li>
-                            <li>Mini quiche</li>
-                            <li>Flavoured sausages on sticks</li>
-                        </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/mail_1324120.png" alt="Email" class="footer-img">
+                        <a href="mailto:info@dignans.com">info@dignans.com</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/address_3447502.png" alt="Address" class="footer-img">
+                        <span>Edinburgh, Scotland</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Lunch Menus Tab -->
-            <div class="tab-content" id="lunch">
-                <h2>Lunch Menus</h2>
-                <p class="menu-description">Freshly prepared rolls, baguettes, sandwiches, ciabattas, salad, and fruit boxes</p>
-                
-                <div class="menu-special">
-                    <h3>'Mix and munch' deal</h3>
-                    <p>Pick two or more items from any section and get 10% discount</p>
-                </div>
+            <!-- Copyright -->
+            <div class="text-center">
+                <p>&copy; 2025 Dignans Catering. All rights reserved<br>
+                    <span class="text-small">Designed and developed by Stanislav Starishko</span>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-                <div class="menu-section">
-                    <h3>Hot Fayre</h3>
-                    <ul>
-                        <li>Fresh homemade soup - £0.90</li>
-                        <li>Homemade corned beef stovies - £1.30</li>
-                    </ul>
-                </div>
+    <!-- JavaScript for Tab Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.menu-tabs .nav-link');
+            const contents = document.querySelectorAll('.menu-content');
 
-                <div class="menu-section">
-                    <h3>Sandwiches, Rolls & Baguettes (£1.10-£1.70)</h3>
-                    <ul class="menu-columns">
-                        <li>Chicken caesar</li>
-                        <li>Ham and port salut</li>
-                        <li>Chicken and sweetcorn</li>
-                        <li>Brie and cranberry</li>
-                        <li>Egg and cress</li>
-                        <li>Tuna and sweetcorn</li>
-                        <li>Greek salad</li>
-                        <li>BLT</li>
-                        <li>Roast beef with horseradish</li>
-                        <li>Turkey and coleslaw</li>
-                        <li>Cheese savoury Club sandwich</li>
-                    </ul>
-                </div>
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const target = this.getAttribute('data-tab');
 
-                <div class="menu-section">
-                    <h3>Salad Boxes (£2.50-£3.50)</h3>
-                    <ul>
-                        <li>Chargrilled chicken, greenleaf and red onion salad, spicey coleslaw, cherry tomatoes with pesto drizzle</li>
-                        <li>Ploughmans lunch with honey ham, chunks of mature cheddar, pickle, crisp celery, and cherry tomatoes</li>
-                
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    // Add active class to the clicked tab and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

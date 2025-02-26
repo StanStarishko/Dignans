@@ -29,6 +29,10 @@
     border-color: var(--primary-hover);
 }
 
+a.btn-primary:hover {
+    color: var(--secondary-hover) !important;
+}
+
 .btn-secondary {
     color: var(--dark);
     background-color: var(--secondary);
@@ -104,7 +108,7 @@
 }
 
 .nav-link {
-    color: var(--dark);
+    color: var(--nav-text);
     padding: 0.5rem 1rem;
     text-decoration: none;
     transition: color 0.15s ease-in-out;
@@ -144,4 +148,39 @@
 .menu-item-price {
     font-weight: bold;
     color: var(--primary);
+}
+
+/* components.css - Add these styles if not already present */
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Form Label */
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--nav-text);
+}
+
+/* Form Control */
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+/* Textarea */
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing */
 }

@@ -7,21 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'">
+        content="default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com https://maps.googleapis.com;">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta name="robots" content="index, follow">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Dignans - High-quality outdoor catering company in Edinburgh.">
-    <meta name="keywords" content="Edinburgh catering, corporate catering, office lunch delivery, BBQ catering">
-    <meta name="author" content="Dignans">
+    <meta name="description" content="Dignans Catering - High-quality outdoor catering company based in Edinburgh.">
+    <meta name="keywords" content="Dignans Catering, Edinburgh catering, corporate catering, office lunches, BBQs">
+    <meta name="author" content="Dignans Catering">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Dignans Catering - Edinburgh's Premier Outdoor Catering Service">
-    <meta property="og:description" content="High-quality catering services in Edinburgh.">
+    <meta property="og:title" content="Dignans Catering - About Us">
+    <meta property="og:description" content="Learn more about Dignans Catering, a high-quality outdoor catering company based in Edinburgh.">
     <meta property="og:image" content="/frontend/img/logos/logo.png">
-    <meta property="og:url" content="https://dignans.com">
+    <meta property="og:url" content="https://dignans.com/about">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/frontend/img/logos/favicon_01.png">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="/frontend/css/layout.css">
     <link rel="stylesheet" href="/frontend/css/menu.css">
 
-    <title>Dignans Catering - Edinburgh</title>
+    <title>Dignans Catering - About Us</title>
 </head>
 
 <body>
@@ -45,12 +45,12 @@
                         <img src="/frontend/img/logos/favicon_03.png" alt="Dignans Catering Logo" class="menu-item-img">
                     </a>
                     <ul class="navbar-nav">
-                        <li><a href="/index.html" class="nav-link active">Home</a></li>
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
                         <li><a href="/frontend/html/menu-page.html" class="nav-link">Menu</a></li>
                         <li><a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a></li>
                         <li><a href="/frontend/html/contact.html" class="nav-link">Contact Us</a></li>
                         <li><a href="/frontend/html/order.html" class="nav-link">Order Form</a></li>
-                        <li><a href="/frontend/html/about.html" class="nav-link">About Us</a></li>
+                        <li><a href="/frontend/html/about.html" class="nav-link active">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,51 +59,66 @@
 
     <!-- Main Content Area -->
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="h1 mb-3">Welcome to Dignans Catering</h1>
-                    <p class="mb-4">Edinburgh's premier outdoor catering service, bringing exceptional food to your
-                        events.</p>
-                    <a href="/frontend/html/contact.html" class="btn btn-primary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content Section -->
+        <!-- About Section -->
         <section class="section">
             <div class="container">
-                <div class="row gap-4">
-                    <!-- Featured Services -->
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Corporate Events</h3>
-                                <p class="card-text">Professional catering solutions for your business meetings and
-                                    corporate events.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
+                <h1 class="h1 mb-4">About Us</h1>
+
+                <!-- Two Columns Layout -->
+                <div class="row">
+                    <!-- Left Column: Company Info with Image -->
+                    <div class="col-md-6 p-4">
+                        <div class="d-flex align-items-start gap-4">
+                            <!-- Image -->
+                            <img src="/frontend/img/logos/large-logo.png" alt="About Us" class="img-about">
+
+                            <!-- Text -->
+                            <div>
+                                <h2 class="h2 mb-3">Welcome to Dignans Catering</h2>
+                                <p class="mb-4">
+                                    Dignans is a high-quality outdoor catering company based in Edinburgh and founded five years ago. As well as catering, the company also runs a café/brasserie as part of our operations.
+                                </p>
+
+                                <h2 class="h2 mb-3">Our Mission</h2>
+                                <p class="mb-4">
+                                    At Dignans, our mission is to provide exceptional catering services that delight our clients and leave a lasting impression. Whether it's a corporate event, office lunch, or a special celebration, we strive to deliver delicious food and outstanding service.
+                                </p>
+                                <p class="mb-4">
+                                    We are committed to using fresh, high-quality ingredients and creating menus that cater to a variety of tastes and dietary requirements. Our team of experienced chefs and staff are dedicated to ensuring every event is a success.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Private Parties</h3>
-                                <p class="card-text">Make your special occasions memorable with our bespoke catering
-                                    services.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Outdoor Events</h3>
-                                <p class="card-text">Specialized in BBQ and outdoor catering for festivals and large
-                                    gatherings.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
+
+                    <!-- Right Column: Contact Info and Opening Hours -->
+                    <div class="col-md-6 p-4">
+                        <h2 class="h2 mb-3">Opening Hours</h2>
+                        <ul class="list-unstyled">
+                            <li><strong>Monday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Tuesday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Wednesday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Thursday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Friday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Saturday:</strong> 11:00 AM - 2:00 PM</li>
+                            <li><strong>Sunday:</strong> Closed</li>
+                        </ul>
+
+                        <h2 class="h2 mb-3 mt-4">Contact Info</h2>
+                        <ul class="list-unstyled">
+                            <li><strong>Phone:</strong> +44 123 456 7890</li>
+                            <li><strong>Email:</strong> info@dignans.com</li>
+                            <li><strong>Address:</strong> 8 Paisley Dr, Edinburgh EH8 7LR</li>
+                        </ul>
+
+                        <!-- Google Maps -->
+                        <div class="mt-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1579.7495956050304!2d-3.142105885499447!3d55.94758142029089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b85c75765ccf%3A0xae3359c278566e24!2s8%20Paisley%20Dr%2C%20Edinburgh%20EH8%207LR!5e0!3m2!1sen!2suk!4v1740597702541!5m2!1sen!2suk" 
+                            width="400" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -165,4 +180,5 @@
         </div>
     </footer>
 </body>
+
 </html>

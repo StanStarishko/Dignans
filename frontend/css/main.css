@@ -20,7 +20,7 @@
     --secondary: #FFF8E0;
     --light: #FFFFFF;
     --dark: #000000;
-    --info: #96B7F3;
+    --info: #ECE7F8/*#96B7F3*/;
     
     /* Specific theme colors */
     --primary-hover: #45A049;
@@ -130,3 +130,7 @@ a:visited {
 .text-start { text-align: left !important; }
 .text-end { text-align: right !important; }
 .text-center { text-align: center !important; }
+
+/* Text sizes*/
+.text-small { font-size: small !important; }
+.text-medium { font-size: medium !important; }

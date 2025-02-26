@@ -13,15 +13,15 @@
     <meta name="robots" content="index, follow">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Dignans - High-quality outdoor catering company in Edinburgh.">
-    <meta name="keywords" content="Edinburgh catering, corporate catering, office lunch delivery, BBQ catering">
-    <meta name="author" content="Dignans">
+    <meta name="description" content="Dignans Catering - Contact us for inquiries and bookings.">
+    <meta name="keywords" content="Dignans Catering, contact, catering inquiries, Edinburgh catering">
+    <meta name="author" content="Dignans Catering">
 
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Dignans Catering - Edinburgh's Premier Outdoor Catering Service">
-    <meta property="og:description" content="High-quality catering services in Edinburgh.">
+    <meta property="og:title" content="Dignans Catering - Contact Us">
+    <meta property="og:description" content="Get in touch with Dignans Catering for inquiries and bookings.">
     <meta property="og:image" content="/frontend/img/logos/logo.png">
-    <meta property="og:url" content="https://dignans.com">
+    <meta property="og:url" content="https://dignans.com/contact">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/frontend/img/logos/favicon_01.png">
@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="/frontend/css/layout.css">
     <link rel="stylesheet" href="/frontend/css/menu.css">
 
-    <title>Dignans Catering - Edinburgh</title>
+    <title>Dignans Catering - Contact Us</title>
 </head>
 
 <body>
@@ -45,10 +45,10 @@
                         <img src="/frontend/img/logos/favicon_03.png" alt="Dignans Catering Logo" class="menu-item-img">
                     </a>
                     <ul class="navbar-nav">
-                        <li><a href="/index.html" class="nav-link active">Home</a></li>
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
                         <li><a href="/frontend/html/menu-page.html" class="nav-link">Menu</a></li>
                         <li><a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a></li>
-                        <li><a href="/frontend/html/contact.html" class="nav-link">Contact Us</a></li>
+                        <li><a href="/frontend/html/contact.html" class="nav-link active">Contact Us</a></li>
                         <li><a href="/frontend/html/order.html" class="nav-link">Order Form</a></li>
                         <li><a href="/frontend/html/about.html" class="nav-link">About Us</a></li>
                     </ul>
@@ -59,54 +59,34 @@
 
     <!-- Main Content Area -->
     <main class="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="h1 mb-3">Welcome to Dignans Catering</h1>
-                    <p class="mb-4">Edinburgh's premier outdoor catering service, bringing exceptional food to your
-                        events.</p>
-                    <a href="/frontend/html/contact.html" class="btn btn-primary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Content Section -->
+        <!-- Contact Form Section -->
         <section class="section">
             <div class="container">
-                <div class="row gap-4">
-                    <!-- Featured Services -->
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Corporate Events</h3>
-                                <p class="card-text">Professional catering solutions for your business meetings and
-                                    corporate events.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
+                <h1 class="h1 mb-4">Contact Us</h1>
+                <form action="#" method="post" class="contact-form">
+                    <!-- From Field -->
+                    <div class="form-group mb-3">
+                        <label for="from" class="form-label">From (Full Name)</label>
+                        <input type="text" id="from" name="from" class="form-control" placeholder="Enter your full name" required>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Private Parties</h3>
-                                <p class="card-text">Make your special occasions memorable with our bespoke catering
-                                    services.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
+
+                    <!-- Subject Field -->
+                    <div class="form-group mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter the subject" required>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Outdoor Events</h3>
-                                <p class="card-text">Specialized in BBQ and outdoor catering for festivals and large
-                                    gatherings.</p>
-                                <a href="#" class="btn btn-secondary">Learn More</a>
-                            </div>
-                        </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
                     </div>
-                </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -165,4 +145,5 @@
         </div>
     </footer>
 </body>
+
 </html>

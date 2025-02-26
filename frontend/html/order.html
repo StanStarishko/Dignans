@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Security Headers -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' https:; script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Dignans Catering - Place your order for delicious catering services.">
+    <meta name="keywords" content="Dignans Catering, order catering, Edinburgh catering, office catering">
+    <meta name="author" content="Dignans Catering">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Dignans Catering - Order Form">
+    <meta property="og:description" content="Place your order for delicious catering services in Edinburgh.">
+    <meta property="og:image" content="/frontend/img/logos/logo.png">
+    <meta property="og:url" content="https://dignans.com/order">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/frontend/img/logos/favicon_01.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/frontend/css/main.css">
+    <link rel="stylesheet" href="/frontend/css/components.css">
+    <link rel="stylesheet" href="/frontend/css/layout.css">
+    <link rel="stylesheet" href="/frontend/css/menu.css">
+
+    <title>Dignans Catering - Order Form</title>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <nav class="navbar">
+                    <a href="/index.html" class="navbar-brand">
+                        <img src="/frontend/img/logos/favicon_03.png" alt="Dignans Catering Logo" class="menu-item-img">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li><a href="/index.html" class="nav-link">Home</a></li>
+                        <li><a href="/frontend/html/menu-page.html" class="nav-link">Menu</a></li>
+                        <li><a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a></li>
+                        <li><a href="/frontend/html/contact.html" class="nav-link">Contact Us</a></li>
+                        <li><a href="/frontend/html/order.html" class="nav-link active">Order Form</a></li>
+                        <li><a href="/frontend/html/about.html" class="nav-link">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main">
+        <!-- Order Section -->
+        <section class="section">
+            <div class="container">
+                <h1 class="h1 mb-4">Order Form</h1>
+                <!-- Top "Order Now" Button -->
+                <div class="d-flex justify-content-start mb-4">
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+
+                <!-- Menu Cards -->
+                <div class="menu-grid">
+                    <!-- Menu A -->
+                    <div class="menu-card">
+                        <img src="/frontend/img/logos/menu-logo-01.webp" alt="Menu A" class="menu-item-img">
+                        <div class="menu-card-body">
+                            <h3>Menu A - £3.00 per person</h3>
+                            <ul>
+                                <li>Cocktail sandwiches</li>
+                                <li>Chicken satay sticks</li>
+                                <li>Indian selection</li>
+                                <li>Vol-au-vents</li>
+                                <li>Flavoured sausages on sticks</li>
+                            </ul>
+                            <p>All disposables supplied free of charge.</p>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Menu B -->
+                    <div class="menu-card">
+                        <img src="/frontend/img/logos/menu-logo-02.webp" alt="Menu B" class="menu-item-img">
+                        <div class="menu-card-body">
+                            <h3>Menu B - £4.00 per person</h3>
+                            <ul>
+                                <li>Cocktail sandwiches</li>
+                                <li>Mini rolls</li>
+                                <li>Chicken satay sticks</li>
+                                <li>Savoury eggs</li>
+                                <li>Mini quiche</li>
+                                <li>Flavoured sausages on sticks</li>
+                            </ul>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Sandwiches and Rolls -->
+                    <div class="menu-card">
+                        <img src="/frontend/img/meals/Sandwiches.jpg" alt="Sandwiches and Rolls" class="menu-item-img">
+                        <div class="menu-card-body">
+                            <h3>Freshly Prepared Rolls, Baguettes, and Sandwiches</h3>
+                            <h4>Prices from £1.10–£1.70</h4>
+                            <ul>
+                                <li>Chicken Caesar</li>
+                                <li>Ham and Port Salut</li>
+                                <li>Chicken and Sweetcorn</li>
+                                <li>Brie and Cranberry</li>
+                                <li>Egg and Cress</li>
+                                <li>Tuna and Sweetcorn</li>
+                                <li>Greek Salad</li>
+                                <li>BLT</li>
+                                <li>Roast Beef with Horseradish</li>
+                                <li>Turkey and Coleslaw</li>
+                                <li>Cheese Savoury Club Sandwich</li>
+                            </ul>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Salad Boxes -->
+                    <div class="menu-card">
+                        <img src="/frontend/img/meals/Salad.jpg" alt="Salad Boxes" class="menu-item-img">
+                        <div class="menu-card-body">
+                            <h3>Salad Boxes</h3>
+                            <h4>From £2.50–£3.50 depending on fillings.</h4>
+                            <ul>
+                                <li>Chargrilled Chicken, Greenleaf, and Red Onion Salad</li>
+                                <li>Ploughman's Lunch with Honey Ham</li>
+                                <li>King Prawn and Avocado Salad</li>
+                                <li>Traditional Greek Salad</li>
+                                <li>Baby Beetroot, Buffalo Mozzarella, and Mint Yoghurt Dressing</li>
+                            </ul>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Everyday Buffet -->
+                    <div class="menu-card">
+                        <img src="/frontend/img/meals/Everyday.jpg" alt="Everyday Buffet" class="menu-item-img">
+                        <div class="menu-card-body">
+                            <h3>The Everyday Buffet</h3>
+                            <ul>
+                                <li>Mixed Mini Submarine Rolls Platter - £1.00 pp</li>
+                                <li>Mini Filled Croissants Platter - £1.00 pp</li>
+                                <li>Filled Wraps Platter - £1.50 pp</li>
+                                <li>Mini Bagels Platter - £1.50 pp</li>
+                                <li>Mixed Sandwiches Platter - £1.50 pp</li>
+                                <li>Fruit Platter for Six - £8.00</li>
+                            </ul>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+
+                    <!-- Executive Menus -->
+                    <div class="menu-card">
+                        <img src="/frontend/img/meals/Executive.jpg" alt="Executive Menus" class="menu-item-img">
+                        <div class="menu-card-body">
+                            <h3>Executive Menus</h3>
+                            <ul>
+                                <li>Menu A - £7.50 pp</li>
+                                <li>Menu B - £9.00 pp</li>
+                                <li>Menu C - £10.50 pp</li>
+                            </ul>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom "Order Now" Button -->
+                <div class="d-flex justify-content-end mt-4">
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Navigation Links -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/frontend/html/menu-page.html" class="nav-link">Menu</a>
+                <a href="/frontend/html/special-offers.html" class="nav-link">Special Offers</a>
+                <a href="/frontend/html/contact.html" class="nav-link">Contact Us</a>
+                <a href="/frontend/html/order.html" class="nav-link active">Order Form</a>
+                <a href="/frontend/html/about.html" class="nav-link">About Us</a>
+            </div>
+
+            <!-- Contact Information and Social Media -->
+            <div class="d-flex justify-content-center gap-5 align-items-center mb-4">
+                <!-- Social Media -->
+                <div class="d-flex gap-3">
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/facebook_5968764.png" alt="Facebook" class="footer-img">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/instagram_4138124.png" alt="Instagram" class="footer-img">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="/frontend/img/icons/X-media.jpg" alt="X (Twitter)" class="footer-img">
+                    </a>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="d-flex gap-5">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/telephone-call_9194924.png" alt="Phone" class="footer-img">
+                        <span>+44 123 456 7890</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/mail_1324120.png" alt="Email" class="footer-img">
+                        <a href="mailto:info@dignans.com">info@dignans.com</a>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="/frontend/img/icons/address_3447502.png" alt="Address" class="footer-img">
+                        <span>Edinburgh, Scotland</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p>&copy; 2025 Dignans Catering. All rights reserved<br>
+                    <span class="text-small">Designed and developed by Stanislav Starishko</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
