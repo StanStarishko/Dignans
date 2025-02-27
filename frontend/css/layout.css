@@ -123,6 +123,8 @@
 
 /* Image styles for offers */
 .img-offer {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
