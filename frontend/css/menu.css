@@ -52,8 +52,9 @@
 }
 
 .menu-item-img {
-    width: auto;
-    height: 10rem;
+    width: 100%;
+    height: auto;
+    border-radius: 8%;
     object-fit: cover;
 }
 

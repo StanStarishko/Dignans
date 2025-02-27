@@ -135,36 +135,6 @@ a.btn-primary:hover {
     text-decoration: none;
 }
 
-/* Menu item styles */
-.menu-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-.menu-item:last-child {
-    border-bottom: none;
-}
-
-.menu-item-img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.menu-item-content {
-    flex-grow: 1;
-    padding: 0 1rem;
-}
-
-.menu-item-price {
-    font-weight: bold;
-    color: var(--primary);
-}
-
 /* Form group styles */
 .form-group {
     margin-bottom: 1rem;

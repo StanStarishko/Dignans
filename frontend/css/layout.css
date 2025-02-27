@@ -83,6 +83,14 @@
     flex-wrap: wrap;
 }
 
+
+.header-img {
+    width: 10rem;
+    height: 10rem;
+    align-items: center;
+    object-fit: cover;
+}
+
 /* Main content area */
 .main {
     padding: 1rem 0;
