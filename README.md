@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a coursework assignment focused on creating a [website for **Dignans**](https://stan-dignans.netlify.app/), a high-quality outdoor catering company based in Edinburgh. The website is designed to promote the company's services, attract new customers, and simplify the ordering process. The theme revolves around catering for local businesses, event planners, and corporate clients in Edinburgh.
+This project is a coursework assignment focused on creating a [website for **Dignans**](https://stan-dignans.netlify.app/), a fictional high-quality outdoor catering company based in Edinburgh. The website is designed to promote the company's services, attract new customers, and simplify the ordering process. The theme revolves around catering for local businesses, event planners, and corporate clients in Edinburgh.
 
 ## Key Details  
 - **Technology Stack**: The implementation uses **only HTML and CSS**, with no scripts or frameworks.  
