@@ -18,8 +18,11 @@
     border: 1px solid transparent;
 }
 
-.btn-primary {
+a.btn-primary {
     color: var(--light);
+}
+
+.btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
 }
