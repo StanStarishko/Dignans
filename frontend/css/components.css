@@ -19,7 +19,7 @@
 }
 
 a.btn-primary {
-    color: var(--light);
+    color: var(--btn);
 }
 
 .btn-primary {
@@ -33,7 +33,7 @@ a.btn-primary {
 }
 
 a.btn-primary:hover {
-    color: var(--secondary-hover) !important;
+    color: var(--btn-hover) !important;
 }
 
 .btn-secondary {
