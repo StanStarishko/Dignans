@@ -20,10 +20,10 @@
     --light: #FFFFFF;
     --dark: #000000;
     --info: #ECE7F8;
-    --primary-hover: #45A049;
+    --primary-hover: #245725;
     --secondary-hover: #E8D9B0;
-    --link-default: #1E88E5;
-    --link-hover: #1565C0;
+    --link-default: #0F4C85;
+    --link-hover: #245725;
     --link-visited: #4A148C;
     --nav-text: #00008B;
 }
