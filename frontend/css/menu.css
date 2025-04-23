@@ -23,7 +23,7 @@
 
 .menu-tabs .nav-link:hover,
 .menu-tabs .nav-link.active {
-    color: var(--light);
+    color: var(--dark);
     background-color: var(--primary);
     border-color: var(--primary-hover);
 }
